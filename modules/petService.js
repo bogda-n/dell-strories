@@ -8,8 +8,8 @@ const FormData = require('form-data')
 module.exports.loginPet = async function () {
   const loginPetUrl = 'https://pet.icecat.biz/api/auth/login'
   const data = {
-    name: 'bogdan_p',
-    password: '\'K3`+<>$u3V8tNu7'
+    name: pet-login,
+    password: pet-password
   }
   const getResponse = await axios.post(loginPetUrl, data)
   return getResponse.data.token
